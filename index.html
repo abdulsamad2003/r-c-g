@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar z-10 fixed h-14 bg-slate-900 flex text-white justify-around pt-4 drop-shadow-2xl w-[100%]"
+    >
+      <div class="log">Color Flipper</div>
+      <div class="nav-links space-x-12">
+        <a href="#main-section">Simple</a>
+        <a href="#hex-section">Hex</a>
+      </div>
+    </nav>
+    <section id="main-section" class="bg-[#87ace488] h-[100vh] w-[100%]">
+      <div class="heading text-center py-24">
+        <h1 class="text-white font-extrabold underline text-2xl">
+          Simple Color Changing
+        </h1>
+      </div>
+
+      <div
+        class="btn mx-auto w-[100%] my text-center absolute top-[50%] translate-y-[-50%]"
+      >
+        <div class="border-2 border-black w-[30%] mx-auto my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold text-white">
+            Background color :
+            <span class="color text-blue-400 font-bold text-2xl"
+              >#87ace488</span
+            >
+          </h1>
+        </div>
+        <button
+          class="border-2 border-slate-900 py-px px-4 rounded-2xl"
+          id="btn"
+        >
+          click me
+        </button>
+      </div>
+    </section>
+
+    <!-- hex section -->
+
+    <section
+      id="hex-section"
+      class="hex bg-pink-500 w-[100%] h-[100vh] text-center space-y-36 py-16"
+    >
+      <div class="heading">
+        <h1 class="text-white font-extrabold underline text-3xl">
+          Hex Color Changing
+        </h1>
+      </div>
+      <div class="btn mx-auto my text-center my-auto">
+        <div class="border-2 border-black w-[30%] mx-auto my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold text-white">
+            Background color :
+            <span class="hex-color text-blue-400 font-bold text-2xl"
+              >#87ace488</span
+            >
+          </h1>
+        </div>
+        <button
+          class="border-2 border-slate-900 py-px px-4 rounded-2xl"
+          id="hex-btn"
+        >
+          click me
+        </button>
+      </div>
+    </section>
+
+    <script src="/clrchanger.js"></script>
+  </body>
+</html>
